@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Num1 <input type="text"class="input"palcehoelder="Enter the name 1"><br>
+    Num2 <input type="text"class="input"palcehoelder="Enter the name 2"><br>
+    <button>Save</button><br>
+    OUTPUT<input type="text"class="input"palcehoelder="Enter the name 3"><br>
+</body>
+<script>
+    let but = document.querySelector("button")
+    let allInput = document.querySelectorAll(".input")
+    
+    but.addEventListener("click",()=>{
+            let sum1 = Number (allInput[0].value)
+            let sum2 = Number (allInput[1].value)
+
+
+            let outPut = sum1+sum2
+            allInput[2].value=outPut;
+            allInput[0].value= ' '
+            allInput[1].value= ' '
+
+
+    })
+    console.log(allInput);
+    
+</script>
+</html>

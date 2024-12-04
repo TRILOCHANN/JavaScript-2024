@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let come=()=> console.log("Hello world")
+
+    come()
+
+
+        //++++++++++++++++++++++++++++++++++++
+
+
+    let data=(num1,num2)=>num1*num2;
+
+    let output=data(50,60)
+    console.log(output)
+
+
+        //+++++++++++++++++++++++++++++++
+
+
+
+     let no=(x,y)=>{
+        return x+y;
+     }
+     let out=no(55,45)
+     console.log(out)
+
+
+        //++++++++++++++++++++++++++++++++++
+
+
+
+
+     let nu=(n,m=30)=>{
+        return n+m;
+     }
+     let x=nu(20,80)
+     console.log(x)
+
+
+
+
+     //+++++++++++++ this keyword uses +++++++++++++++
+
+
+
+     let obj={
+        "cname":"ws cube",
+        "name":"Trilochan",  
+        cinfo:function(){
+            console.log(this)
+        }
+     }
+     obj.cinfo()
+
+
+
+     //return a object
+
+
+     //function are not used in obj return will be window 
+
+
+ 
+</script>
+</html>
